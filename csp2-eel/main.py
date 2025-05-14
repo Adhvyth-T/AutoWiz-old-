@@ -54,7 +54,7 @@ def formfiller():
 
 
 
-genai.configure(api_key="AIzaSyBMvepv-_OgN2A8CGn5MwwHRH3_aBWgyXs")
+genai.configure(api_key="")
 model = genai.GenerativeModel(model_name="gemini-1.5-pro-latest",
                               generation_config=generation_config,
                               safety_settings=safety_settings,tools=[execute_python_code,fileconversion,formfiller])
